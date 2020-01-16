@@ -5,7 +5,7 @@ const app = express()
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/form',function(req,res){
-    res.sendFile(path.join(__dirname+'/validationForm.html'));
+    res.sendFile(path.join(__dirname+'/index.html'));
 });
 
 app.post('/anagram', function (req, res){
