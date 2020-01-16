@@ -25,15 +25,14 @@ app.post('/anagram', function (req, res){
             i=i+1
             }
             return count
-        
         } 
     }
     
     if (makeAnagram(string1,string2)){
-        res.send("True") 
+        res.send(count) 
     }
     else{
-        res.send("False")
+        res.send(count)
     }
 })
 app.listen(5000,()=>{
